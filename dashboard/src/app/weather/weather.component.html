@@ -1,0 +1,13 @@
+<div class="component-container" *ngIf="weatherData">
+    <h2>Weather</h2>
+    <ul>
+        <li>City: {{ weatherData.name }}</li>
+        <li>Temperature: {{ weatherData.main.temp }}°C</li>
+        <li>Humidity: {{ weatherData.main.humidity }}%</li>
+        <li>Weather: {{ weatherData.weather[0].description }}</li>
+    </ul>
+
+  </div>
+  <div *ngIf="!weatherData">
+    <p>Loading weather data...</p>
+  </div>
