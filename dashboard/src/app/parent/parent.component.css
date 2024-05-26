@@ -1,12 +1,11 @@
 .component-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .component-container {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    flex: 1;
-    min-width: 250px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+}
+.component-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+}

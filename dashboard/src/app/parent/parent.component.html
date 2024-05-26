@@ -1,4 +1,4 @@
-<h1>Today</h1>
+<h1>Parent Component</h1>
 <div>
   <label>
     <input type="checkbox" [(ngModel)]="showStock" />
@@ -7,24 +7,17 @@
   <label>
     <input type="checkbox" [(ngModel)]="showEmail" />
     Email
-  </label>  
+  </label>
   <label>
     <input type="checkbox" [(ngModel)]="showTodo" />
     To-Do
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showDateTime" />
-    Date Time
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showWeather" />
-    Weather
   </label>
 </div>
 <div class="component-wrapper">
   <app-stock *ngIf="showStock"></app-stock>
   <app-email *ngIf="showEmail"></app-email>
   <app-todo *ngIf="showTodo"></app-todo>
-  <app-live-date-time *ngIf="showDateTime"></app-live-date-time>
-  <app-weather *ngIf="showWeather"></app-weather>
+</div>
+<div class="component-wrapper">
+  <app-weather></app-weather>
 </div>
