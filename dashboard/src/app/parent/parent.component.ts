@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { StockComponent } from '../stock/stock.component';
 import { EmailComponent } from '../email/email.component';
 import { TodoComponent } from '../todo/todo.component';
+import {LiveDateTimeComponent} from '../live-date-time/live-date-time.component'
 
 @Component({
   selector: 'app-parent',
   standalone: true,
-  imports: [CommonModule, FormsModule, StockComponent, EmailComponent, TodoComponent],
+  imports: [CommonModule, FormsModule, StockComponent, EmailComponent, TodoComponent, LiveDateTimeComponent],
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
@@ -16,4 +17,5 @@ export class ParentComponent {
   showStock = true;
   showEmail = true;
   showTodo = true;
+  showDateTime=true;
 }

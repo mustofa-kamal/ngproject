@@ -12,9 +12,14 @@
     <input type="checkbox" [(ngModel)]="showTodo" />
     To-Do
   </label>
+  <label>
+    <input type="checkbox" [(ngModel)]="showDateTime" />
+    Date Time
+  </label>
 </div>
 <div class="component-wrapper">
   <app-stock *ngIf="showStock"></app-stock>
   <app-email *ngIf="showEmail"></app-email>
   <app-todo *ngIf="showTodo"></app-todo>
+  <app-live-date-time *ngIf="showDateTime"></app-live-date-time>
 </div>
