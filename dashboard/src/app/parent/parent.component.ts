@@ -17,4 +17,5 @@ export class ParentComponent {
   showStock = true;
   showEmail = true;
   showTodo = true;
+  showWeather = true;
 }

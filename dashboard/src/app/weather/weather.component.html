@@ -2,9 +2,12 @@
   <h2>Weather</h2>
   <div *ngIf="city">
     <p>City: {{ city }}</p>
-    <p *ngIf="weatherData">
+    <div *ngIf="weatherData">
       <!-- Display weather data here -->
-    </p>
+      <p>Temperature: {{ weatherData.main.temp }}°C</p>
+      <p>Humidity: {{ weatherData.main.humidity }}%</p>
+      <p>Weather: {{ weatherData.weather[0].description }}</p>
+   </div>
   </div>
   <div *ngIf="!city">
     <p>Loading location...</p>
