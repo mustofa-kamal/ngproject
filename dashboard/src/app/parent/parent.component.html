@@ -16,6 +16,10 @@
     <input type="checkbox" [(ngModel)]="showWeather" />
     Weather
   </label>
+  <label>
+    <input type="checkbox" [(ngModel)]="showQuotes" />
+    Quotes
+  </label>
 
 </div>
 <div class="component-wrapper">
@@ -23,5 +27,6 @@
   <app-email *ngIf="showEmail"></app-email>
   <app-todo *ngIf="showTodo"></app-todo>
   <app-weather *ngIf="showWeather"></app-weather>
+  <app-quotes  *ngIf="showQuotes"></app-quotes>
 </div>
 

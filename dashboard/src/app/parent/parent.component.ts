@@ -5,11 +5,12 @@ import { StockComponent } from '../stock/stock.component';
 import { EmailComponent } from '../email/email.component';
 import { TodoComponent } from '../todo/todo.component';
 import { WeatherComponent } from '../weather/weather.component';
+import { QuotesComponent } from '../quotes/quotes.component';
 
 @Component({
   selector: 'app-parent',
   standalone: true,
-  imports: [CommonModule, FormsModule, StockComponent, EmailComponent, TodoComponent, WeatherComponent],
+  imports: [CommonModule, FormsModule, StockComponent, EmailComponent, TodoComponent, WeatherComponent, QuotesComponent],
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
@@ -18,4 +19,6 @@ export class ParentComponent {
   showEmail = true;
   showTodo = true;
   showWeather = true;
+  showQuotes=true;
+
 }
