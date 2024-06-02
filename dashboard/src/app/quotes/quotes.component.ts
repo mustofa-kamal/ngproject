@@ -58,7 +58,7 @@ export class QuotesComponent implements OnInit, OnDestroy {
     this.autoRefresh = true;
     this.autoRefreshInterval = setInterval(() => {
       this.getRandomQuote();
-    }, 8000);
+    }, 10000);
   }
 
   stopAutoRefresh(): void {

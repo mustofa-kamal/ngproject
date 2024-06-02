@@ -6,19 +6,24 @@ import { EmailComponent } from '../email/email.component';
 import { TodoComponent } from '../todo/todo.component';
 import { WeatherComponent } from '../weather/weather.component';
 import { QuotesComponent } from '../quotes/quotes.component';
+import { DateComponent } from '../date/date.component';
+import { DayComponent } from '../day/day.component';
 
 @Component({
   selector: 'app-parent',
   standalone: true,
-  imports: [CommonModule, FormsModule, StockComponent, EmailComponent, TodoComponent, WeatherComponent, QuotesComponent],
+  imports: [CommonModule, FormsModule, StockComponent, EmailComponent, TodoComponent, WeatherComponent, QuotesComponent, DateComponent, DayComponent],
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent {
-  showStock = true;
-  showEmail = true;
-  showTodo = true;
+  showDates=true;
+  showDay=true;
   showWeather = true;
   showQuotes=true;
+  showStock = false;
+  showEmail = false;
+  showTodo = false;
+
 
 }

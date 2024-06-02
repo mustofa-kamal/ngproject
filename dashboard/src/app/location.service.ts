@@ -9,6 +9,7 @@ import { switchMap } from 'rxjs/operators';
 export class LocationService {
   private geocodingApiUrl = 'https://api.opencagedata.com/geocode/v1/json';
   private apiKey = '8f347603fbf143db87d2e1d6d8d8b3c5';
+  private sunriseSunsetApiUrl = 'https://api.sunrise-sunset.org/json';
 
   constructor(private http: HttpClient) {}
 
@@ -32,6 +33,13 @@ export class LocationService {
         const city = response.results[0]?.components.city || response.results[0]?.components.town || response.results[0]?.components.village || 'Unknown';
         return from([city]);
       })
+    );
+  }
+
+  getSunriseSunset(lat: number, lng: number): Observable<any> {
+    const url = `${this.sunriseSunsetApiUrl}?lat=${lat}&lng=${lng}&formatted=0`;
+    return this.http.get<any>(url).pipe(
+      switchMap(response => from([response.results]))
     );
   }
 }
