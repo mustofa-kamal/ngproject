@@ -1,0 +1,10 @@
+.moon-phase-line {
+    display: flex;
+    align-items: center;
+  }
+  
+  .moon-phase-image {
+    width: 34px;
+    height: 34px;
+    margin-left: 10px;
+  }
