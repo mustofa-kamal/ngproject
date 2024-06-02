@@ -4,9 +4,9 @@
     <p><strong>City:</strong> {{ city }}</p>
     <div *ngIf="weatherData">
       <!-- Display weather data here -->
-      <p><strong>Temperature:</strong> {{ weatherData.main.temp }}°C</p>
-      <p><strong>Humidity:</strong> {{ weatherData.main.humidity }}%</p> 
-      <p><strong>Weather:</strong> {{ weatherData.weather[0].description }}</p>
+      <p><strong>Temperature:</strong>&nbsp;{{ weatherData.main.temp }}°C</p>
+      <p><strong>Humidity:</strong>&nbsp;{{ weatherData.main.humidity }}%</p> 
+      <p><strong>Weather:</strong>&nbsp;{{ weatherData.weather[0].description }}</p>
    </div>
   </div>
   <div *ngIf="!city">
