@@ -4,9 +4,13 @@
     <p><strong>City:</strong> {{ city }}</p>
     <div *ngIf="weatherData">
       <!-- Display weather data here -->
-      <p><strong>Temperature:</strong>&nbsp;{{ weatherData.main.temp }}°C</p>
+      <p><strong>Present Temperature:</strong>&nbsp;{{ getRoundedTemp(weatherData.main.temp)}}°C</p>
+      <p><strong>Feels Like:</strong>&nbsp;{{ getRoundedTemp(weatherData.main.feels_like) }}°C</p>
+      <p><strong>Minimum Temperature:</strong>&nbsp;{{ getRoundedTemp(weatherData.main.temp_min) }}°C</p>
+      <p><strong>Maximum Temperature:</strong>&nbsp;{{ getRoundedTemp(weatherData.main.temp_max) }}°C</p>
       <p><strong>Humidity:</strong>&nbsp;{{ weatherData.main.humidity }}%</p> 
       <p><strong>Weather:</strong>&nbsp;{{ weatherData.weather[0].description }}</p>
+      <p><strong>Wind Speed:</strong>&nbsp;{{ weatherData.wind.speed }}&nbsp;meter/sec</p>
    </div>
   </div>
   <div *ngIf="!city">

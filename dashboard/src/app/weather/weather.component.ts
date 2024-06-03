@@ -58,4 +58,9 @@ export class WeatherComponent implements OnInit, OnDestroy {
     // Unsubscribe from all subscriptions to prevent memory leaks
     this.subscriptions.unsubscribe();
   }
+
+  getRoundedTemp(temp: number): number {
+    return Math.round(temp);
+  }
+  
 }
