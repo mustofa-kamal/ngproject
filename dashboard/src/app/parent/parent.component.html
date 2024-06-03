@@ -1,5 +1,4 @@
-<h1 style="white-space: nowrap;">Today's Essentials:&nbsp;<app-live-date-time></app-live-date-time></h1>
-<div>
+<h1>Today's Essentials</h1>
   <label>
     <input type="checkbox" [(ngModel)]="showDates" />
     Today
@@ -36,7 +35,7 @@
  
   
 
-</div>
+
 <div class="component-wrapper">
   <app-date *ngIf="showDates"></app-date>
   <app-day *ngIf="showDay"></app-day>

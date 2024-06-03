@@ -37,14 +37,8 @@ export class LiveDateTimeComponent implements OnInit, OnDestroy {
 
   private formatDateWithoutSeconds(date: Date): string {
     const options: Intl.DateTimeFormatOptions = {
-      year: 'numeric',
-      month: 'numeric',
-      day: 'numeric',
       hour: 'numeric',
-      minute: 'numeric'
-     
-      
-      
+      minute: 'numeric' 
     };
     return date.toLocaleString(undefined, options);
   }

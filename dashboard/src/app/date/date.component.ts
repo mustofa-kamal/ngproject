@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import moment from 'moment';  // Import moment
 import 'moment/locale/bn';  // Import Bengali locale
+import { LiveDateTimeComponent } from '../live-date-time/live-date-time.component';
 
 @Component({
   selector: 'app-date',
   standalone: true,
   templateUrl: './date.component.html',
-  styleUrls: ['./date.component.css']
+  styleUrls: ['./date.component.css'],
+  imports: [LiveDateTimeComponent]
 })
 export class DateComponent implements OnInit {
   todayGregorian: string = '';

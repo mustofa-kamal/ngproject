@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { LocationService } from '../location.service';
 
+
 @Component({
   selector: 'app-day',
   standalone: true,
   templateUrl: './day.component.html',
   styleUrls: ['./day.component.css'],
-  providers: [LocationService]
+  providers: [LocationService],
 })
 export class DayComponent implements OnInit {
   sunrise: string = '';

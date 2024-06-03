@@ -1,8 +1,10 @@
 <div class="component-container">
-    <h2>Date</h2>
-    <p><strong>Gregorian Calendar:</strong>&nbsp;{{ todayGregorian }}</p>
-    <p><strong>Islamic Hijri Calendar:</strong>&nbsp;{{ todayHijri }}</p>
-    <p><strong>Bengali Calendar:</strong>&nbsp;{{ todayBengali }}</p>
-    <p><strong>Jewish Calendar:</strong>&nbsp;{{ todayJewish }}</p>
-  </div>
-  
+  <h2 class="date-header">
+    Date
+    <app-live-date-time class="live-date-time"></app-live-date-time>
+  </h2>
+  <p><strong>Gregorian Calendar:</strong>&nbsp;{{ todayGregorian }}</p>
+  <p><strong>Islamic Hijri Calendar:</strong>&nbsp;{{ todayHijri }}</p>
+  <p><strong>Bengali Calendar:</strong>&nbsp;{{ todayBengali }}</p>
+  <p><strong>Jewish Calendar:</strong>&nbsp;{{ todayJewish }}</p>
+</div>
