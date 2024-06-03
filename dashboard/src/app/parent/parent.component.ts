@@ -9,12 +9,13 @@ import { QuotesComponent } from '../quotes/quotes.component';
 import { DateComponent } from '../date/date.component';
 import { DayComponent } from '../day/day.component';
 import { NightComponent } from '../night/night.component';
+import { LiveDateTimeComponent } from '../live-date-time/live-date-time.component';
 
 @Component({
   selector: 'app-parent',
   standalone: true,
   imports: [CommonModule, FormsModule, StockComponent, EmailComponent, TodoComponent, WeatherComponent,
-     QuotesComponent, DateComponent, DayComponent, NightComponent],
+     QuotesComponent, DateComponent, DayComponent, NightComponent, LiveDateTimeComponent],
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })

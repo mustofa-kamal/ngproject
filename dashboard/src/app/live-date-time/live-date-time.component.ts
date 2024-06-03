@@ -42,6 +42,9 @@ export class LiveDateTimeComponent implements OnInit, OnDestroy {
       day: 'numeric',
       hour: 'numeric',
       minute: 'numeric'
+     
+      
+      
     };
     return date.toLocaleString(undefined, options);
   }
