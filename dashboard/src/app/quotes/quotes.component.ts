@@ -18,13 +18,14 @@ interface Quote {
 export class QuotesComponent implements OnInit, OnDestroy {
   quotes: Quote[] = [];
   currentQuote: Quote | null = null;
-  autoRefresh: boolean = false;
+  autoRefresh: boolean = true;  // Auto-refresh on by default
   autoRefreshInterval: any;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.loadQuotes();
+    this.startAutoRefresh();  // Start auto-refresh when the component initializes
   }
 
   ngOnDestroy(): void {

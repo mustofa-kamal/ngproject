@@ -1,9 +1,8 @@
 <div class="component-container">
-    <h2>Random Quote</h2>
-    <div *ngIf="currentQuote">
-      <p>{{ currentQuote.quote }}</p>
-      <p><strong>- {{ currentQuote.author }}</strong></p>
-    </div>
-    <button (click)="toggleAutoRefresh()">{{ autoRefresh ? 'Stop' : 'Auto' }}</button>
+  <h2>Random Quote</h2>
+  <div *ngIf="currentQuote">
+    <p>{{ currentQuote.quote }}</p>
+    <p><strong>- {{ currentQuote.author }}</strong></p>
   </div>
-  
+  <button (click)="toggleAutoRefresh()">{{ autoRefresh ? 'Stop' : 'Auto' }}</button>
+</div>

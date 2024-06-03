@@ -1,54 +1,29 @@
 <h1>Today's Essentials</h1>
-  <label>
-    <input type="checkbox" [(ngModel)]="showDates" />
-    Today
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showDay" />
-    Day
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showNight" />
-    Night
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showWeather" />
-    Weather
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showQuotes" />
-    Quotes
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showStock" />
-    Stock
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showEmail" />
-    Email
-  </label>
-  <label>
-    <input type="checkbox" [(ngModel)]="showTodo" />
-    To-Do
-  </label>
- 
- 
-  
-
+<label>
+  <input type="checkbox" [(ngModel)]="showDates" />
+  Today
+</label>
+<label>
+  <input type="checkbox" [(ngModel)]="showDay" />
+  Day
+</label>
+<label>
+  <input type="checkbox" [(ngModel)]="showNight" />
+  Night
+</label>
+<label>
+  <input type="checkbox" [(ngModel)]="showWeather" />
+  Weather
+</label>
+<label>
+  <input type="checkbox" [(ngModel)]="showQuotes" />
+  Quotes
+</label>
 
 <div class="component-wrapper">
   <app-date *ngIf="showDates"></app-date>
   <app-day *ngIf="showDay"></app-day>
   <app-night *ngIf="showNight"></app-night>
   <app-weather *ngIf="showWeather"></app-weather>
-  <app-quotes  *ngIf="showQuotes"></app-quotes>
-  <app-stock *ngIf="showStock"></app-stock>
-  <app-email *ngIf="showEmail"></app-email>
-  <app-todo *ngIf="showTodo"></app-todo>
-  
-  
- 
-  
- 
+  <app-quotes *ngIf="showQuotes"></app-quotes>
 </div>
-
