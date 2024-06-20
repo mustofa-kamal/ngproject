@@ -110,3 +110,9 @@ pdf-to-speech-0-8bf1fdbf3053.json
 # Temporary files
 *.tmp
 *.temp
+
+*.mp3
+*.mp4
+*.png
+*.svg
+*.docx
